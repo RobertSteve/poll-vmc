@@ -37,20 +37,6 @@
 .body .content .textArea .item {
   font-weight: 700;
 }
-.body .content .cuestionOne ul.stars,
-.body .content .cuestionTwo ul.stars,
-.body .content .textArea ul.stars {
-  list-style: none;
-  font-size: 20px;
-  height: 20px;
-  margin-top: 10px;
-}
-.body .content .cuestionOne ul.stars li,
-.body .content .cuestionTwo ul.stars li,
-.body .content .textArea ul.stars li {
-  display: inline-block;
-  cursor: pointer;
-}
 .body .content .textArea {
   border-bottom: 0;
 }
@@ -58,4 +44,34 @@
   margin-top: 10px;
   min-height: 160px;
   width: 100%;
+}
+/*
+ * Star
+*/
+ul.stars {
+  list-style: none;
+  font-size: 20px;
+  height: 20px;
+  margin-top: 10px;
+}
+ul.stars li {
+  display: inline-block;
+  cursor: pointer;
+}
+.star-1 li:nth-child(1),
+.star-2 li:nth-child(1),
+.star-2 li:nth-child(2),
+.star-3 li:nth-child(1),
+.star-3 li:nth-child(2),
+.star-3 li:nth-child(3),
+.star-4 li:nth-child(1),
+.star-4 li:nth-child(2),
+.star-4 li:nth-child(3),
+.star-4 li:nth-child(4),
+.star-5 li:nth-child(1),
+.star-5 li:nth-child(2),
+.star-5 li:nth-child(3),
+.star-5 li:nth-child(4),
+.star-5 li:nth-child(5) {
+  color: #f9b34b;
 }

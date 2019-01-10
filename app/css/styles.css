@@ -2,48 +2,77 @@
   padding: 0;
   margin: 0;
 }
+.text-center {
+  text-align: center;
+}
 .text-bold {
   font-weight: 700;
 }
-.header {
+.headerPoll {
   text-align: center;
   padding: 45px 0 20px 0;
 }
-.header .title {
+@media screen and (max-width: 600px) {
+  .headerPoll {
+    padding: 35px 10px 20px 10px;
+  }
+}
+.headerPoll .title {
   color: #2ad4c6;
   font-size: 24px;
   text-transform: uppercase;
 }
-.body {
+@media screen and (max-width: 600px) {
+  .headerPoll .title {
+    font-size: 22px;
+  }
+}
+.bodyPoll {
   width: 100%;
   height: auto;
   background-color: #fafafa;
 }
-.body .content {
+.bodyPoll .content {
   width: 50%;
   margin: 0 auto;
 }
-.body .content .cuestionOne,
-.body .content .cuestionTwo,
-.body .content .textArea {
+@media screen and (max-width: 600px) {
+  .bodyPoll .content {
+    width: 90%;
+  }
+}
+.bodyPoll .content .cuestionOne,
+.bodyPoll .content .cuestionTwo,
+.bodyPoll .content .textArea {
   color: #717e91;
   font-size: 14px;
   text-align: center;
   border-bottom: 1px solid #e4e4e4;
   padding: 20px 0;
 }
-.body .content .cuestionOne .item,
-.body .content .cuestionTwo .item,
-.body .content .textArea .item {
+.bodyPoll .content .cuestionOne .item,
+.bodyPoll .content .cuestionTwo .item,
+.bodyPoll .content .textArea .item {
   font-weight: 700;
 }
-.body .content .textArea {
+.bodyPoll .content .textArea {
   border-bottom: 0;
+  position: relative;
 }
-.body .content .textArea .input {
+.bodyPoll .content .textArea .input {
   margin-top: 10px;
   min-height: 160px;
-  width: 100%;
+  width: calc(100% - 52px);
+  resize: none;
+  padding: 8px 34px 8px 18px;
+}
+.bodyPoll .content .btn-historial {
+  border-radius: 0;
+  height: 43px;
+  background-color: #8e96cc;
+  min-width: 164px;
+  text-align: center;
+  cursor: pointer;
 }
 /*
  * Star
@@ -74,4 +103,53 @@ ul.stars li {
 .star-5 li:nth-child(4),
 .star-5 li:nth-child(5) {
   color: #f9b34b;
+}
+/*
+ * Circle
+*/
+.circle {
+  position: absolute;
+  bottom: 5px;
+  right: 5px;
+  z-index: 99;
+}
+svg {
+  height: 20px;
+  transform: rotate(-90deg);
+  width: 20px;
+}
+.progress-bar__background {
+  fill: none;
+  stroke: #e2eff0;
+  stroke-width: 1.8;
+}
+.progress-bar__progress {
+  fill: none;
+  stroke: #e2eff0;
+  stroke: #00ab25 !important;
+  stroke-dasharray: 100 100;
+  stroke-dashoffset: 100;
+  stroke-linecap: round;
+  stroke-width: 1.8;
+  transition: stroke-dashoffset 1s ease-in-out;
+}
+.progress-bar__progress_danger {
+  fill: none;
+  stroke: #e2eff0;
+  stroke: #f92d2d !important;
+  stroke-dasharray: 100 100;
+  stroke-dashoffset: 100;
+  stroke-linecap: round;
+  stroke-width: 1.8;
+  transition: stroke-dashoffset 1s ease-in-out;
+}
+.progress-bar__progress_warning {
+  fill: none;
+  stroke: #e2eff0;
+  stroke: #e48800 !important;
+  stroke-dasharray: 100 100;
+  stroke-dashoffset: 100;
+  stroke-linecap: round;
+  stroke-width: 1.8;
+  transition: stroke-dashoffset 1s ease-in-out;
 }

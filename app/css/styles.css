@@ -1,7 +1,6 @@
-* {
-  padding: 0;
-  margin: 0;
-}
+/*
+ * Start Poll vue
+*/
 .text-center {
   text-align: center;
 }
@@ -10,20 +9,24 @@
 }
 .headerPoll {
   text-align: center;
-  padding: 45px 0 20px 0;
+  padding: 45px 0 40px 0;
 }
 @media screen and (max-width: 600px) {
   .headerPoll {
     padding: 35px 10px 20px 10px;
   }
 }
-.headerPoll .title {
+.headerPoll .iconPoll {
+  margin-bottom: 10px;
+}
+.headerPoll .titlePoll {
   color: #2ad4c6;
   font-size: 24px;
   text-transform: uppercase;
+  font-weight: 700;
 }
 @media screen and (max-width: 600px) {
-  .headerPoll .title {
+  .headerPoll .titlePoll {
     font-size: 22px;
   }
 }
@@ -31,42 +34,41 @@
   width: 100%;
   height: auto;
   background-color: #fafafa;
+  padding-bottom: 40px;
+  font-weight: 600;
 }
-.bodyPoll .content {
+.bodyPoll .contentPoll {
   width: 50%;
   margin: 0 auto;
 }
 @media screen and (max-width: 600px) {
-  .bodyPoll .content {
+  .bodyPoll .contentPoll {
     width: 90%;
   }
 }
-.bodyPoll .content .cuestionOne,
-.bodyPoll .content .cuestionTwo,
-.bodyPoll .content .textArea {
+.bodyPoll .contentPoll .questionPoll,
+.bodyPoll .contentPoll .textArea {
   color: #717e91;
   font-size: 14px;
   text-align: center;
   border-bottom: 1px solid #e4e4e4;
-  padding: 20px 0;
+  padding: 25px 0;
 }
-.bodyPoll .content .cuestionOne .item,
-.bodyPoll .content .cuestionTwo .item,
-.bodyPoll .content .textArea .item {
+.bodyPoll .contentPoll .questionPoll .item,
+.bodyPoll .contentPoll .textArea .item {
   font-weight: 700;
 }
-.bodyPoll .content .textArea {
+.bodyPoll .contentPoll .textArea {
   border-bottom: 0;
   position: relative;
 }
-.bodyPoll .content .textArea .input {
+.bodyPoll .contentPoll .textArea .input {
   margin-top: 10px;
   min-height: 160px;
-  width: calc(100% - 52px);
   resize: none;
   padding: 8px 34px 8px 18px;
 }
-.bodyPoll .content .btn-historial {
+.bodyPoll .contentPoll .btn-historial {
   border-radius: 0;
   height: 43px;
   background-color: #8e96cc;
@@ -79,8 +81,8 @@
 */
 ul.stars {
   list-style: none;
-  font-size: 20px;
-  height: 20px;
+  font-size: 25px;
+  height: 25px;
   margin-top: 10px;
 }
 ul.stars li {
@@ -153,3 +155,6 @@ svg {
   stroke-width: 1.8;
   transition: stroke-dashoffset 1s ease-in-out;
 }
+/*
+ * End Poll
+ */
